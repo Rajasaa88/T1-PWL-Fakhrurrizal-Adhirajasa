@@ -1,6 +1,7 @@
 import chalk from "chalk";
 import cowsay from "cowsay";
 import figlet from "figlet";
+import gradient from "gradient-string";
 
 // Nama & NIM
 console.log(
@@ -9,9 +10,11 @@ console.log(
 );
 
 // Pesan Motivasi (cowsay)
+const pesan = gradient.rainbow("Do what you do kawan");
+
 console.log(
   cowsay.say({
-    text: "Do what you do kawan",
+    text: pesan,
     e: "^^",
     T: "U ",
     f: "stegosaurus"
